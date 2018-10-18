@@ -261,7 +261,7 @@ $ docker logs -f 5d0940c3385c
 
 You will be able to see each new log that arrives on the container.
 
-### Entrer dans le conteneur
+### Enter in the container
 
 To be in interactive mode, we use the `-i` option, most often coupled with the` -t` option which allows us to have a tty attached to the container:
 

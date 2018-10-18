@@ -119,10 +119,10 @@ spec:
     - name: nginx
       image: nginx
       volumeMounts:
-      - name: ENDPOINT
+      - name: endpoint
         mountPath: /tmp
   volumes:
-    - name: ENDPOINT
+    - name: endpoint
       configMap:
         name: db-endpoint
 ```
