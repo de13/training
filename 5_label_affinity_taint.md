@@ -375,6 +375,8 @@ withgpu   1/1     Running   0          11s   10.42.1.19   worker1   <none>
 
 Just like the previous Pod, we choose to place this Pod on the worker1, but in addition to the previous Pod, we allow, thanks to a tolerance, this Pod to be executed on it.
 
+In the case of a small cluster where you can not fully dedicate the hardware, you may prefer to use `PreferNoSchedule` than `NoSchedule`.
+
 ## Conclusion
 
 Affinities and taints are of great service when a cluster grows in size and constraints appear. But we must make good use of it, keeping in mind that they are there to reduce the operational burden and not increase it.
